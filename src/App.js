@@ -1,9 +1,17 @@
+import React, { Component } from 'react';
 import cart from './Assets/svg/add_to_cart.svg';
-import './App.css';
 import { Products } from './components/Products';
-import { Component } from 'react';
+import data from './Assets/data.json'
 
-class App extends Component {
+class App extends React.Component {
+
+  constructor(){
+    super()
+    this.state = {
+      products: data.products
+    }
+  }
+
   render(){
     return (
       <div className="App">
@@ -17,9 +25,14 @@ class App extends Component {
         </div>
   
         <div className="main-content" >
-          <div className="product-list" >
+          <div className="shop">
             <h2>Shop</h2>
-            <Products />
+            <div className="product-list" > 
+              <Products products={this.state.products}  />
+            </div>
+          </div>
+          <div className="cart" >
+            <h2>Cart</h2>
           </div>
         </div>
   

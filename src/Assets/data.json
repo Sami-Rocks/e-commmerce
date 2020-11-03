@@ -1,0 +1,70 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Vans Old Skool",
+            "price": 50.12,
+            "image": "https://www.nicepng.com/png/full/53-537516_nike-zoom-fly-flyknit-shoe-mens-nike-zoom.png"
+        },
+        {
+            "id": 4,
+            "title": "Converse Chuck Taylor All Star",
+            "price": 50.20,
+            "image": "https://www.pngarts.com/files/2/Shoes-Transparent-Background-PNG.png"
+        },
+        {
+            "id": 2,
+            "title": "Adidas Yeezy Boost 350",
+            "price": 300.00,
+            "image": "https://pngimg.com/uploads/converse/converse_PNG14.png"
+        },
+        {
+            "id": 3,
+            "title": "Adidas NMD",
+            "price": 130.60,
+            "image": "https://www.nicepng.com/png/full/53-537516_nike-zoom-fly-flyknit-shoe-mens-nike-zoom.png"
+        },
+        {
+            "id": 5,
+            "title": "Adidas Superstar",
+            "price": 50.02,
+            "image": "https://img2.pngio.com/sneaker-png-transparent-image-png-mart-sneakers-shoes-png-2500_1923.png"
+        },
+        {
+            "id": 6,
+            "title": "Adidas Stan Smith",
+            "price": 110.11,
+            "image": "https://www.pngarts.com/files/2/Shoes-Transparent-Background-PNG.png"
+        },
+        {
+            "id": 7,
+            "title": "Nike Air Huarache",
+            "price": 208.12,
+            "image": "https://static1.squarespace.com/static/566e100d0e4c116bdc11b2c2/566e19b3d82d5ed309b8e7f8/57cedda659cc682df876cbea/1517835770057/245282-ceb4145ac7b646889a16b6f5dbd2f455.png?format=1500w"
+        },
+        {
+            "id": 8,
+            "title": "Adidas Ultra Boost",
+            "price": 180.10,
+            "image": "https://www.pngarts.com/files/2/Shoes-Transparent-Background-PNG.png"
+        },
+        {
+            "id": 9,
+            "title": "Vans Authentic",
+            "price": 50.00,
+            "image": "https://www.nicepng.com/png/full/53-537516_nike-zoom-fly-flyknit-shoe-mens-nike-zoom.png"
+        },
+        {
+            "id": 10,
+            "title": "Nike Air VaporMax",
+            "price": 190.00,
+            "image": "https://www.pngarts.com/files/2/Shoes-Transparent-Background-PNG.png"
+        },
+        {
+            "id": 11,
+            "title": "NNike Air Max 1",
+            "price": 110.12,
+            "image": "https://img2.pngio.com/sneaker-png-transparent-image-png-mart-sneakers-shoes-png-2500_1923.png"
+        }
+    ]
+}
