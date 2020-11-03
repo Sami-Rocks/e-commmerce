@@ -8,13 +8,15 @@ body{
     height: 100%;
     max-width: 137rem;
     margin: 0 auto;
+
+    
     .header{
         height: 5rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
+        
         padding: 0 1rem;
         .logo{
             font-size: 1.7rem;
@@ -26,7 +28,7 @@ body{
             }
         }
     }
-
+    
     .main-content{
         text-align: center;
         h2{margin: .3rem; margin-bottom: 2rem;}
@@ -40,7 +42,7 @@ body{
             margin: 0;     
             width: fit-content !important;
         }
-
+        
         .product-list{
             display: flex;
             flex-direction: row;
@@ -52,21 +54,23 @@ body{
             .product{
                 flex: 1 1 29rem;
                 width: 25rem;
+                cursor: pointer;
                 max-width: 25rem;
                 height: 28rem;
                 padding: 1rem;
                 background: white;
                 background: radial-gradient(circle, rgba(242,161, 102,1) 10%, white 70%);
+                transition: .5s all ease;
                 border-radius: 2rem;
                 h4{color: $blue ;margin: .1rem;}
                 p{color: #717195; margin: .1rem;}
-
+                
                 .product-header{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
                     padding: .2rem;
-
+                    transition: .5s all ease;
                     img{
                         width: 1.52rem;
                         height: 1.52rem;
@@ -75,7 +79,7 @@ body{
                         padding: .5rem;
                     }
                 }
-
+                
                 .product-image-background{
                     width: 80%;
                     height: 63%;
@@ -89,6 +93,7 @@ body{
                         .rect{
                             height: 100%;
                             .circle{
+                                transition: .5s all ease;
                                 background: $yellow;
                                 position: absolute;
                                 width: 12rem;
@@ -102,6 +107,7 @@ body{
                     .product-image{
                         position: absolute;
                         top: 1rem;
+                        transition: .5s all ease;
                         img{
                             width: 100%;
                             height: auto;
@@ -116,7 +122,61 @@ body{
                     font-size: 2rem;
                 }
             }
+            .product:hover{
+                .product-header{            
+                    img:hover{
+                        transform: rotate(15deg);
+                    }
+                }
+                .product-image-background{
+                    .product-background{
+                        .rect{
+                            .circle{
+                                left: 15%;
+                                top: -.9rem;
+                                width: 15rem;
+                                height: 15rem;
+                            }
+                        }
+                    }
+                    .product-image{
+                        transform: rotate(-15deg);
+                    }
+                }
+                
+            }
+            .product:hover{
+                position:relative;
+                -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+                -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+                box-shadow:0 0px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            }
+            .product:hover:before, .product:hover:after{
+                content:"";
+                position:absolute;
+                z-index:-1;
+                -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+                -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+                box-shadow:0 0 20px rgba(0,0,0,0.8);
+                top:0;
+                bottom:0;
+                left:10px;
+                right:10px;
+                -moz-border-radius:100px / 10px;
+                border-radius:100px / 10px;
+            }
+            .product:hover:after{
+                right:10px;
+                left:auto;
+                -webkit-transform:skew(8deg) rotate(3deg);
+                -moz-transform:skew(8deg) rotate(3deg);
+                -ms-transform:skew(8deg) rotate(3deg);
+                -o-transform:skew(8deg) rotate(3deg);
+                transform:skew(8deg) rotate(3deg);
+            }
         }
+
+        
 
         .cart{
             display: none;
