@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import cart from './Assets/svg/add_to_cart.svg';
 import { Products } from './components/Products';
 import data from './Assets/data.json'
+import Fade from 'react-reveal/Reveal'
 
 class App extends React.Component {
 
@@ -15,14 +16,16 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <div className="header">
-          <div className="logo">
-            SamiLogo
+        <Fade cascade>
+          <div className="header">
+            <div className="logo">
+              SamiLogo
+            </div>
+            <div className="cart">
+              <img src={cart} alt='cart'/>
+            </div>
           </div>
-          <div className="cart">
-            <img src={cart} alt='cart'/>
-          </div>
-        </div>
+        </Fade>
   
         <div className="main-content" >
           <div className="shop">
